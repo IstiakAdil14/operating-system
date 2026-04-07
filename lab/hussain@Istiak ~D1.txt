@@ -1,0 +1,860 @@
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.6.87.2-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Mar  4 16:07:20 +06 2026
+
+  System load:  0.24                Processes:             53
+  Usage of /:   0.2% of 1006.85GB   Users logged in:       0
+  Memory usage: 11%                 IPv4 address for eth0: 172.24.134.93
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+This message is shown once a day. To disable it please create the
+/home/hussain/.hushlogin file.
+hussain@Istiak:~$ man man
+man: can't resolve man7/groff_man.7
+hussain@Istiak:~$ pwd
+/home/hussain
+hussain@Istiak:~$ ls
+F2         cFile    e4.sh  f1.txt       f4.txt       file1.txt
+F2.c       cFile.c  e5.sh  f1.txt.save  f6.txt       shell1.sh
+OS_lab     e2.sh    e6.sh  f2.SH        f7.txt
+Shell1.sh  e3.sh    f1.sh  f3.txt       f7.txt.save
+hussain@Istiak:~$ who
+hussain  pts/1        2026-03-04 16:07
+hussain@Istiak:~$ whoami
+hussain
+hussain@Istiak:~$ mkdir D1
+hussain@Istiak:~$ ls
+D1      Shell1.sh  e3.sh  f1.sh        f3.txt  f7.txt.save
+F2      cFile      e4.sh  f1.txt       f4.txt  file1.txt
+F2.c    cFile.c    e5.sh  f1.txt.save  f6.txt  shell1.sh
+OS_lab  e2.sh      e6.sh  f2.SH        f7.txt
+hussain@Istiak:~$ rmdir D1
+hussain@Istiak:~$ ls
+F2         cFile    e4.sh  f1.txt       f4.txt       file1.txt
+F2.c       cFile.c  e5.sh  f1.txt.save  f6.txt       shell1.sh
+OS_lab     e2.sh    e6.sh  f2.SH        f7.txt
+Shell1.sh  e3.sh    f1.sh  f3.txt       f7.txt.save
+hussain@Istiak:~$ rmdir D1
+rmdir: failed to remove 'D1': No such file or directory
+hussain@Istiak:~$ mkdir D1
+hussain@Istiak:~$ mkdir D2
+hussain@Istiak:~$ cd D1
+hussain@Istiak:~/D1$ cd ..
+hussain@Istiak:~$ cd ~
+hussain@Istiak:~$ ls
+D1  F2.c       cFile    e3.sh  e6.sh   f1.txt.save  f4.txt  f7.txt.save
+D2  OS_lab     cFile.c  e4.sh  f1.sh   f2.SH        f6.txt  file1.txt
+F2  Shell1.sh  e2.sh    e5.sh  f1.txt  f3.txt       f7.txt  shell1.sh
+hussain@Istiak:~$ cd D1
+hussain@Istiak:~/D1$ cat f1.txt
+cat: f1.txt: No such file or directory
+hussain@Istiak:~/D1$ touch f1.txt
+hussain@Istiak:~/D1$ nano f1.txt
+hussain@Istiak:~/D1$ cat f1.txt
+Hi this is from f1 of D1 for linux commands pdf tasks
+
+hussain@Istiak:~/D1$ nano f2.txt
+hussain@Istiak:~/D1$ cp f1.txt f2.txt
+hussain@Istiak:~/D1$ nano f2.txt
+hussain@Istiak:~/D1$ cat f2.txt
+Hi this is from f1 of D1 for linux commands pdf tasks
+
+hussain@Istiak:~/D1$ mv f1.txt f3.txt
+hussain@Istiak:~/D1$ cat f3.txt
+Hi this is from f1 of D1 for linux commands pdf tasks
+
+hussain@Istiak:~/D1$ cat f1.txt
+cat: f1.txt: No such file or directory
+hussain@Istiak:~/D1$ mv f3.txt D2
+hussain@Istiak:~/D1$ cd D2
+-bash: cd: D2: Not a directory
+hussain@Istiak:~/D1$ ls
+D2  f2.txt
+hussain@Istiak:~/D1$ cd ..
+hussain@Istiak:~$ cd D2
+hussain@Istiak:~/D2$ ls
+hussain@Istiak:~/D2$ mv f3.txt D2
+mv: cannot stat 'f3.txt': No such file or directory
+hussain@Istiak:~/D2$ cd ..
+hussain@Istiak:~$ cd D1
+hussain@Istiak:~/D1$ ls
+D2  f2.txt
+hussain@Istiak:~/D1$ cp f1.txt f4.txt
+cp: cannot stat 'f1.txt': No such file or directory
+hussain@Istiak:~/D1$ cp f2.txt f4.txt
+hussain@Istiak:~/D1$ ls
+D2  f2.txt  f4.txt
+hussain@Istiak:~/D1$ cp f2.txt f5.txt
+hussain@Istiak:~/D1$ ls
+D2  f2.txt  f4.txt  f5.txt
+hussain@Istiak:~/D1$ mv f5.txt D2
+hussain@Istiak:~/D1$ ls
+D2  f2.txt  f4.txt
+hussain@Istiak:~/D1$ cd ..
+hussain@Istiak:~$ cd D2
+hussain@Istiak:~/D2$ ls
+hussain@Istiak:~/D2$ cd ~
+hussain@Istiak:~$ ls
+D1  F2.c       cFile    e3.sh  e6.sh   f1.txt.save  f4.txt  f7.txt.save
+D2  OS_lab     cFile.c  e4.sh  f1.sh   f2.SH        f6.txt  file1.txt
+F2  Shell1.sh  e2.sh    e5.sh  f1.txt  f3.txt       f7.txt  shell1.sh
+hussain@Istiak:~$ cd D2
+hussain@Istiak:~/D2$ ls
+hussain@Istiak:~/D2$ cd ..
+hussain@Istiak:~$ cd D1
+hussain@Istiak:~/D1$ cp f2.txt f5.txt
+hussain@Istiak:~/D1$ ls
+D2  f2.txt  f4.txt  f5.txt
+hussain@Istiak:~/D1$ mv D1/f5.txt D2/
+mv: cannot stat 'D1/f5.txt': No such file or directory
+hussain@Istiak:~/D1$ ls
+D2  f2.txt  f4.txt  f5.txt
+hussain@Istiak:~/D1$ mv f5.txt D2/
+mv: cannot stat 'D2/': Not a directory
+hussain@Istiak:~/D1$ mkdir D2
+mkdir: cannot create directory ‘D2’: File exists
+hussain@Istiak:~/D1$ mkdir D2
+mkdir: cannot create directory ‘D2’: File exists
+hussain@Istiak:~/D1$ ls
+D2  f2.txt  f4.txt  f5.txt
+hussain@Istiak:~/D1$ mv f5.txt D2/
+mv: cannot stat 'D2/': Not a directory
+hussain@Istiak:~/D1$ ls -l
+total 16
+-rw-r--r-- 1 hussain hussain 55 Mar  4 16:19 D2
+-rw-r--r-- 1 hussain hussain 55 Mar  4 16:15 f2.txt
+-rw-r--r-- 1 hussain hussain 55 Mar  4 16:19 f4.txt
+-rw-r--r-- 1 hussain hussain 55 Mar  4 16:23 f5.txt
+hussain@Istiak:~/D1$ ls
+D2  f2.txt  f4.txt  f5.txt
+hussain@Istiak:~/D1$ mv f2.txt D2/
+mv: cannot stat 'D2/': Not a directory
+hussain@Istiak:~/D1$ rm D2
+hussain@Istiak:~/D1$ mkdir D2
+hussain@Istiak:~/D1$ mv f2.txt D2/
+hussain@Istiak:~/D1$ ls -l
+total 12
+drwxr-xr-x 2 hussain hussain 4096 Mar  4 16:33 D2
+-rw-r--r-- 1 hussain hussain   55 Mar  4 16:19 f4.txt
+-rw-r--r-- 1 hussain hussain   55 Mar  4 16:23 f5.txt
+hussain@Istiak:~/D1$ cd D2
+hussain@Istiak:~/D1/D2$ ls -l
+total 4
+-rw-r--r-- 1 hussain hussain 55 Mar  4 16:15 f2.txt
+hussain@Istiak:~/D1/D2$ ls
+f2.txt
+hussain@Istiak:~/D1/D2$ cd ..
+hussain@Istiak:~/D1$ ls
+D2  f4.txt  f5.txt
+hussain@Istiak:~/D1$ rm f5.txt
+hussain@Istiak:~/D1$ ls
+D2  f4.txt
+hussain@Istiak:~/D1$ nano f4.txt
+hussain@Istiak:~/D1$ cat f4.txt
+
+Hi this is from f1 of D1 for linux commands pdf tasks
+echo "Hello OS Lab" > f4.txt
+hussain@Istiak:~/D1$ echo f4.txt
+f4.txt
+hussain@Istiak:~/D1$ echo "Hello OS Lab" > f4.txt
+hussain@Istiak:~/D1$ cat f4.txt
+Hello OS Lab
+hussain@Istiak:~/D1$ nano f4.txt
+hussain@Istiak:~/D1$ touch f4.txt
+hussain@Istiak:~/D1$ nano f4.txt
+hussain@Istiak:~/D1$ nano f5.txt
+hussain@Istiak:~/D1$ more f4.txt
+Hello OS Lab
+hussain@Istiak:~/D1$ less f4.txt
+hussain@Istiak:~/D1$ ls -l f4.txt
+-rw-r--r-- 1 hussain hussain 13 Mar  4 16:39 f4.txt
+hussain@Istiak:~/D1$ chmod g+w f4.txt
+hussain@Istiak:~/D1$ ls -l f4.txt
+-rw-rw-r-- 1 hussain hussain 13 Mar  4 16:39 f4.txt
+hussain@Istiak:~/D1$ chmod u+x f4.txt
+hussain@Istiak:~/D1$ ls -l f4.txt
+-rwxrw-r-- 1 hussain hussain 13 Mar  4 16:39 f4.txt
+hussain@Istiak:~/D1$ chmod o+x f4.txt
+hussain@Istiak:~/D1$ ls -l f4.txt
+-rwxrw-r-x 1 hussain hussain 13 Mar  4 16:39 f4.txt
+hussain@Istiak:~/D1$ touch substitue.txt
+hussain@Istiak:~/D1$ nano substitue.txt
+hussain@Istiak:~/D1$ more substitue.txt
+
+this is the practice file for learning Substitude commands of linux
+hussain@Istiak:~/D1$ sed -i 's/linux/LINUX' substitue.txt
+sed: -e expression #1, char 13: unterminated `s' command
+hussain@Istiak:~/D1$ sed -i 's/linux/LINUX/' substitue.txt
+hussain@Istiak:~/D1$ more substitue.txt
+
+this is the practice file for learning Substitude commands of LINUX
+hussain@Istiak:~/D1$ nano substitue.txt
+hussain@Istiak:~/D1$ more substitue.txt
+
+this is the practice file for learning Substitude commands of LINUX linux
+hussain@Istiak:~/D1$ nano substitue.txt
+hussain@Istiak:~/D1$ more substitue.txt
+
+this is the practice file for learning Substitude commands of LINUX linux li
+nux
+hussain@Istiak:~/D1$ sed -i 's/linux/LINUX/2' substitue.txt
+hussain@Istiak:~/D1$ more substitue.txt
+
+this is the practice file for learning Substitude commands of LINUX linux LI
+NUX
+hussain@Istiak:~/D1$ nano substitue.txt
+hussain@Istiak:~/D1$ sed -i 's/linux/LINUX/g' substitue.txt
+hussain@Istiak:~/D1$ more substitue.txt
+
+this is the practice file for learning Substitude commands of LINUX
+LINUX LINUX LINUX LINUX LINUX LINUX
+hussain@Istiak:~/D1$ nano substitue.txt
+hussain@Istiak:~/D1$ touch delete.txt
+hussain@Istiak:~/D1$ nano delete.txt
+hussain@Istiak:~/D1$ more delete.txt
+Linux is powerful
+This is a word example
+I love Linux
+Another word is here
+Operating system
+hussain@Istiak:~/D1$ sed -i '/is/d' delete.txt
+hussain@Istiak:~/D1$ more delete.txt
+I love Linux
+Operating system
+hussain@Istiak:~/D1$ more delete.txt
+I love Linux
+Operating system
+hussain@Istiak:~/D1$ nano delete.txt
+hussain@Istiak:~/D1$ sed -i '2d' delete.txt
+hussain@Istiak:~/D1$ more delete.txt
+I love Linux
+Linux is powerful
+This is a word example
+I love Linux
+Another word is here
+Operating system
+hussain@Istiak:~/D1$ sed -i '3d' delete.txt
+hussain@Istiak:~/D1$ more delete.txt
+I love Linux
+Linux is powerful
+I love Linux
+Another word is here
+Operating system
+hussain@Istiak:~/D1$ nano delete.txt
+hussain@Istiak:~/D1$ more delete.txt
+I love Linux
+Linux is powerful
+I love Linux
+Another word is here
+Operating system
+Linux is powerful
+This is a word example
+I love Linux
+Another word is here
+Operating system
+hussain@Istiak:~/D1$ sed -i '2,5d' delete.txt
+hussain@Istiak:~/D1$ more delete.txt
+I love Linux
+Linux is powerful
+This is a word example
+I love Linux
+Another word is here
+Operating system
+hussain@Istiak:~/D1$ ls
+D2  delete.txt  f4.txt  f5.txt  substitue.txt
+hussain@Istiak:~/D1$ nano shell.sh
+hussain@Istiak:~/D1$ nano shell.sh
+hussain@Istiak:~/D1$ more shell.sh
+
+
+echo "Hello from shell script"
+echo "Today is:"
+date
+hussain@Istiak:~/D1$  ./shell.sh
+-bash: ./shell.sh: Permission denied
+hussain@Istiak:~/D1$ chmod u+x shell.sh
+hussain@Istiak:~/D1$ ./shell.sh
+Hello from shell script
+Today is:
+Thu Mar  5 10:13:53 +06 2026
+hussain@Istiak:~/D1$ nano cFile.c
+hussain@Istiak:~/D1$ more cFile.c
+#include <stdio.h>
+int main () {
+printf("im from c file.");
+}
+hussain@Istiak:~/D1$ gcc cFile.c -o cFile
+hussain@Istiak:~/D1$ ./cFile
+im from c file.hussain@Istiak:~/D1$ time ./shell.sh
+Hello from shell script
+Today is:
+Thu Mar  5 10:15:45 +06 2026
+
+real    0m0.017s
+user    0m0.000s
+sys     0m0.018s
+hussain@Istiak:~/D1$ time ./cFile.c
+-bash: ./cFile.c: Permission denied
+
+real    0m0.009s
+user    0m0.001s
+sys     0m0.009s
+hussain@Istiak:~/D1$ cd ..
+hussain@Istiak:~$ ls
+D1  F2.c       cFile    e3.sh  e6.sh   f1.txt.save  f4.txt  f7.txt.save
+D2  OS_lab     cFile.c  e4.sh  f1.sh   f2.SH        f6.txt  file1.txt
+F2  Shell1.sh  e2.sh    e5.sh  f1.txt  f3.txt       f7.txt  shell1.sh
+hussain@Istiak:~$ nano f3.txt
+hussain@Istiak:~$ cd D1
+hussain@Istiak:~/D1$ ls
+D2  cFile  cFile.c  delete.txt  f4.txt  f5.txt  shell.sh  substitue.txt
+hussain@Istiak:~/D1$ touch shell1.sh
+hussain@Istiak:~/D1$ more shell1.sh
+hussain@Istiak:~/D1$ nano shell1.sh
+hussain@Istiak:~/D1$ more shell1.sh
+
+
+echo "Welcome to Shell Script Example"
+
+echo "Enter your name:"
+read name
+
+echo "Hello $name"
+
+a=3
+
+echo "The value of a is $a"
+
+echo "Multiplying a by 2:"
+echo $((a*2))
+hussain@Istiak:~/D1$ ./shell1.sh
+-bash: ./shell1.sh: Permission denied
+hussain@Istiak:~/D1$ chmod u+x shell1.sh
+hussain@Istiak:~/D1$ ./shell1.sh
+Welcome to Shell Script Example
+Enter your name:
+Adil
+Hello Adil
+The value of a is 3
+Multiplying a by 2:
+6
+hussain@Istiak:~/D1$ more shell1.sh
+
+
+echo "Welcome to Shell Script Example"
+
+echo "Enter your name:"
+read name
+
+echo "Hello $name"
+
+a=3
+
+echo "The value of a is $a"
+
+echo "Multiplying a by 2:"
+echo $((a*2))
+hussain@Istiak:~/D1$ nano shell1.sh
+hussain@Istiak:~/D1$ more shell1.sh
+
+echo "Welcome to Shell Script Example"
+
+echo "Enter your name:"
+read name
+
+echo "Hello $name"
+
+a=3
+
+echo "The value of a is $a"
+
+echo "Type a int value for multiplication:"
+read b
+
+echo "Multiplying a by $b:"
+echo $((a*b))
+
+hussain@Istiak:~/D1$ ./shell1.sh
+Welcome to Shell Script Example
+Enter your name:
+Adil
+Hello Adil
+The value of a is 3
+Type a int value for multiplication:
+5
+Multiplying a by 5:
+15
+hussain@Istiak:~/D1$ more shellQustion1.sh
+more: cannot open shellQustion1.sh: No such file or directory
+hussain@Istiak:~/D1$ touch shellQustion1.sh
+hussain@Istiak:~/D1$ nano shellQustion1.sh
+hussain@Istiak:~/D1$ cd ..
+hussain@Istiak:~$ ls
+D1  F2.c       cFile    e3.sh  e6.sh   f1.txt.save  f4.txt  f7.txt.save
+D2  OS_lab     cFile.c  e4.sh  f1.sh   f2.SH        f6.txt  file1.txt
+F2  Shell1.sh  e2.sh    e5.sh  f1.txt  f3.txt       f7.txt  shell1.sh
+hussain@Istiak:~$ cd D1
+hussain@Istiak:~/D1$ ls
+D2     cFile.c     f4.txt  shell.sh   shellQustion1.sh
+cFile  delete.txt  f5.txt  shell1.sh  substitue.txt
+hussain@Istiak:~/D1$ ./shellQustion1.sh
+-bash: ./shellQustion1.sh: Permission denied
+hussain@Istiak:~/D1$ chmod u+x shellQuestion1.sh
+chmod: cannot access 'shellQuestion1.sh': No such file or directory
+hussain@Istiak:~/D1$ chmod u+x shellQustion1.sh
+hussain@Istiak:~/D1$ more shellQustion1.sh
+
+echo "Enter a file or directory name:"
+read name
+
+if [ -d "$name" ]
+then
+    echo "$name is a directory"
+
+elif [ -f "$name" ]
+then
+    echo "$name is a regular file"
+
+else
+    echo "$name is something else"
+fi
+hussain@Istiak:~/D1$ ./shellQustion1.sh
+Enter a file or directory name:
+cFile.c
+cFile.c is a regular file
+hussain@Istiak:~/D1$ ./shellQustion1.sh
+Enter a file or directory name:
+D2
+D2 is a directory
+hussain@Istiak:~/D1$ ./shellQustion1.sh
+Enter a file or directory name:
+Adil
+Adil is something else
+hussain@Istiak:~/D1$ cd .
+hussain@Istiak:~/D1$ cd ..
+hussain@Istiak:~$ more e2.sh
+echo "enter THE fILE NAMe"
+
+read filename
+
+if [ ! -f "$filename" ]
+then echo "FilE dOesNOt exiTS"
+exit 1
+fi
+tr '[a-z]' '[A-Z]'< $filename
+hussain@Istiak:~$ nano e2.sh
+hussain@Istiak:~$ more e2.sh
+echo "enter THE fILE NAMe"
+
+read filename
+
+if [ ! -f "$filename" ]
+then echo "FilE dOesNOt exiTS"
+exit 1
+fi
+tr '[a-z]' '[A-Z]'< $filename
+hussain@Istiak:~$ cd D1
+hussain@Istiak:~/D1$ ls
+D2     cFile.c     f4.txt  shell.sh   shellQustion1.sh
+cFile  delete.txt  f5.txt  shell1.sh  substitue.txt
+hussain@Istiak:~/D1$ nano shellQustion2.sh
+hussain@Istiak:~/D1$ chmod u+x shellQustion2.sh
+hussain@Istiak:~/D1$ more shellQustion2.sh
+echo "enter the file name:"
+read filename
+if [ ! -f "$filename" ]
+then echo "File doesnot exits"
+exit 1
+fi
+tr '[a-z'] '[A-Z]' < $filename
+hussain@Istiak:~/D1$ ./shellQustion2.sh
+enter the file name:
+shell.sh
+
+
+ECHO "HELLO FROM SHELL SCRIPT"
+ECHO "TODAY IS:"
+DATE
+hussain@Istiak:~/D1$ nano shellQustion2.sh
+hussain@Istiak:~/D1$ ./shellQustion2.sh
+enter the file name:
+shell.sh
+file exits
+
+
+ECHO "HELLO FROM SHELL SCRIPT"
+ECHO "TODAY IS:"
+DATE
+hussain@Istiak:~/D1$ ./shellQustion2.sh
+enter the file name:
+file1
+File doesnot exits
+hussain@Istiak:~/D1$ nano shellQustion2.sh
+hussain@Istiak:~/D1$ ./shellQustion2.sh
+Enter file names:
+f4.txt
+f4.txt exists → Converted to F4.TXT
+hussain@Istiak:~/D1$ ./shellQustion2.sh
+Enter file names:
+^X^X
+ does not exist
+hussain@Istiak:~/D1$ ls
+D2      cFile    delete.txt  f5.txt    shell1.sh         shellQustion2.sh
+F4.TXT  cFile.c  f4.txt      shell.sh  shellQustion1.sh  substitue.txt
+hussain@Istiak:~/D1$ nano shellQustion2.sh
+hussain@Istiak:~/D1$ ls
+D2      cFile    delete.txt  f5.txt    shell1.sh         shellQustion2.sh
+F4.TXT  cFile.c  f4.txt      shell.sh  shellQustion1.sh  substitue.txt
+hussain@Istiak:~/D1$ ./shellQustion2.sh
+Enter file names:
+f5.txt
+hussain@Istiak:~/D1$ more f5.txt
+hi
+hussain@Istiak:~/D1$ nano shellQustion2.sh
+hussain@Istiak:~/D1$ more f5.txt
+hi
+hussain@Istiak:~/D1$
+hussain@Istiak:~/D1$ ./shellQustion2.sh
+Enter file names:
+f5.txt
+---- Content of f5.txt (UPPERCASE) ----
+HI
+-----------------------------------
+hussain@Istiak:~/D1$ ./shellQustion2.sh
+Enter file names:
+substitude.txt delete.txt
+substitude.txt not found
+---- Content of delete.txt (UPPERCASE) ----
+I LOVE LINUX
+LINUX IS POWERFUL
+THIS IS A WORD EXAMPLE
+I LOVE LINUX
+ANOTHER WORD IS HERE
+OPERATING SYSTEM
+-----------------------------------
+hussain@Istiak:~/D1$ ./shellQustion2.sh
+Enter file names:
+substitue.txt delete.txt
+---- Content of substitue.txt (UPPERCASE) ----
+
+THIS IS THE PRACTICE FILE FOR LEARNING SUBSTITUDE COMMANDS OF LINUX
+LINUX LINUX LINUX LINUX LINUX LINUX
+-----------------------------------
+---- Content of delete.txt (UPPERCASE) ----
+I LOVE LINUX
+LINUX IS POWERFUL
+THIS IS A WORD EXAMPLE
+I LOVE LINUX
+ANOTHER WORD IS HERE
+OPERATING SYSTEM
+-----------------------------------
+hussain@Istiak:~/D1$ cd ..
+hussain@Istiak:~$ ls
+D1  F2.c       cFile    e3.sh  e6.sh   f1.txt.save  f4.txt  f7.txt.save
+D2  OS_lab     cFile.c  e4.sh  f1.sh   f2.SH        f6.txt  file1.txt
+F2  Shell1.sh  e2.sh    e5.sh  f1.txt  f3.txt       f7.txt  shell1.sh
+hussain@Istiak:~$ more e3.sh
+echo "enter"
+read filename
+
+echo "start"
+read s
+
+echo "end"
+read e
+
+sed -n $s,$e\p $filename
+hussain@Istiak:~$ more e2.sh
+echo "enter THE fILE NAMe"
+
+read filename
+
+if [ ! -f "$filename" ]
+then echo "FilE dOesNOt exiTS"
+exit 1
+fi
+tr '[a-z]' '[A-Z]'< $filename
+hussain@Istiak:~$ cd D1
+hussain@Istiak:~/D1$ ls
+D2      cFile    delete.txt  f5.txt    shell1.sh         shellQustion2.sh
+F4.TXT  cFile.c  f4.txt      shell.sh  shellQustion1.sh  substitue.txt
+hussain@Istiak:~/D1$ touch shellQustion3.sh
+hussain@Istiak:~/D1$ nano shellQustion3.sh
+hussain@Istiak:~/D1$ chmod u+x shellQustion3.sh
+hussain@Istiak:~/D1$ ./shellQustion3.sh
+Enter file name:
+^X^X
+Starting line:
+^X^X^X^[[A^[[A
+Ending line:
+
+sed: -e expression #1, char 1: unknown command: `'
+hussain@Istiak:~/D1$
+hussain@Istiak:~/D1$ more f4.txt
+Hello OS Lab
+hussain@Istiak:~/D1$ more f5.txt
+hi
+hussain@Istiak:~/D1$ more delete.txt
+I love Linux
+Linux is powerful
+This is a word example
+I love Linux
+Another word is here
+Operating system
+hussain@Istiak:~/D1$ ./shellQustion3.sh
+Enter file name:
+delete.txt
+Starting line:
+2
+Ending line:
+4
+Linux is powerful
+This is a word example
+I love Linux
+hussain@Istiak:~/D1$ cd ..
+hussain@Istiak:~$ ls
+D1  F2.c       cFile    e3.sh  e6.sh   f1.txt.save  f4.txt  f7.txt.save
+D2  OS_lab     cFile.c  e4.sh  f1.sh   f2.SH        f6.txt  file1.txt
+F2  Shell1.sh  e2.sh    e5.sh  f1.txt  f3.txt       f7.txt  shell1.sh
+hussain@Istiak:~$ ./e3.sh
+enter
+
+start
+
+end
+
+sed: -e expression #1, char 1: unknown command: `,'
+hussain@Istiak:~$ more f3.txt
+echo
+read
+a=3
+$a
+
+if [COMPARIsON]; another COndition
+then
+elif [CompArison]
+then
+else
+then
+fi
+
+qs1: write a shell script that takes a command line argument and reports
+on whether it is directory, a file, or SOMEthing ELSE
+
+qs2: WRITE a shell script that accepts oNE OR MORE FILE NAMe(S) AS
+ArgUmentS AND CONvertS All of them to uppercase, PROvided tHey ExiSt iN
+tHE CURrENt DIreCtOrY
+
+QS3: WRITE A SHELL Shell script THAT ACCEPTS A FILE NAME, STARTING AND
+ENDING LINE NUMBERS AS ARGUMENTS AND DISPLAYS ALL THE LINE BETWEEN THE
+GIVEN LINE NUMBERS
+
+hussain@Istiak:~$ ./e3.sh
+enter
+f3.txt
+start
+1
+end
+4
+echo
+read
+a=3
+$a
+hussain@Istiak:~$ cd D1
+hussain@Istiak:~/D1$ ls
+D2      cFile.c     f5.txt     shellQustion1.sh  substitue.txt
+F4.TXT  delete.txt  shell.sh   shellQustion2.sh
+cFile   f4.txt      shell1.sh  shellQustion3.sh
+hussain@Istiak:~/D1$ cd ..
+hussain@Istiak:~$ ls
+D1  F2.c       cFile    e3.sh  e6.sh   f1.txt.save  f4.txt  f7.txt.save
+D2  OS_lab     cFile.c  e4.sh  f1.sh   f2.SH        f6.txt  file1.txt
+F2  Shell1.sh  e2.sh    e5.sh  f1.txt  f3.txt       f7.txt  shell1.sh
+hussain@Istiak:~$ more e4.s
+more: cannot open e4.s: No such file or directory
+hussain@Istiak:~$
+hussain@Istiak:~$ cd D1
+hussain@Istiak:~/D1$ ls
+D2      cFile.c     f5.txt     shellQustion1.sh  substitue.txt
+F4.TXT  delete.txt  shell.sh   shellQustion2.sh
+cFile   f4.txt      shell1.sh  shellQustion3.sh
+hussain@Istiak:~/D1$ nano shellQustion1.sh
+hussain@Istiak:~/D1$ nano shellQustion2.sh
+hussain@Istiak:~/D1$ nano shellQustion1.sh
+hussain@Istiak:~/D1$ nano shellQustion2.sh
+hussain@Istiak:~/D1$ nano shellQustion3.sh
+hussain@Istiak:~/D1$ cd ..
+hussain@Istiak:~$ more e4.s
+more: cannot open e4.s: No such file or directory
+hussain@Istiak:~$ more e4.sh
+echo " enter file name"
+read filename
+ echo "word YOU want"
+read word
+
+
+sed -i "s/$word//g"  "$filename"
+
+hussain@Istiak:~$ ./e4.sh
+ enter file name
+
+word YOU want
+
+sed: can't read : No such file or directory
+hussain@Istiak:~$
+hussain@Istiak:~$ ls
+D1  F2.c       cFile    e3.sh  e6.sh   f1.txt.save  f4.txt  f7.txt.save
+D2  OS_lab     cFile.c  e4.sh  f1.sh   f2.SH        f6.txt  file1.txt
+F2  Shell1.sh  e2.sh    e5.sh  f1.txt  f3.txt       f7.txt  shell1.sh
+hussain@Istiak:~$ ./e4.sh
+ enter file name
+
+word YOU want
+
+sed: can't read : No such file or directory
+hussain@Istiak:~$ more f6.txt
+Khaiya kham naI.Ruja masho kosto kori ailam huda.
+
+hussain@Istiak:~$ ./e4.sh
+ enter file name
+f6.txt
+word YOU want
+kori
+hussain@Istiak:~$ more f6.txt
+Khaiya kham naI.Ruja masho kosto  ailam huda.
+
+hussain@Istiak:~$ cd D1
+hussain@Istiak:~/D1$ ls
+D2      cFile.c     f5.txt     shellQustion1.sh  substitue.txt
+F4.TXT  delete.txt  shell.sh   shellQustion2.sh
+cFile   f4.txt      shell1.sh  shellQustion3.sh
+hussain@Istiak:~/D1$ touch shellQustion4.sh
+hussain@Istiak:~/D1$ nano shellQustion4.sh
+hussain@Istiak:~/D1$ ls
+D2      cFile.c     f5.txt     shellQustion1.sh  shellQustion4.sh
+F4.TXT  delete.txt  shell.sh   shellQustion2.sh  substitue.txt
+cFile   f4.txt      shell1.sh  shellQustion3.sh
+hussain@Istiak:~/D1$ more f4.txt
+Hello OS Lab
+hussain@Istiak:~/D1$ chmod u+x shellQustion4.sh
+hussain@Istiak:~/D1$  ./shellQustion4.sh
+enter file name:
+f4.txt
+word you want to delete:
+OS
+hussain@Istiak:~/D1$ more f4.txt
+Hello  Lab
+hussain@Istiak:~/D1$ touch shellQustion5.sh
+\hussain@Istiak:~/D1$ chmod u+x shellQustion5.sh
+hussain@Istiak:~/D1$ nano shellQustion5.sh
+hussain@Istiak:~/D1$ nano f4.txt
+hussain@Istiak:~/D1$ more f4.txt
+Hello this is OS Lab
+hi
+hello
+hello
+hello
+
+hussain@Istiak:~/D1$ ./shellQustion5.sh
+enter filename:
+f4.txt
+line number:
+3
+hussain@Istiak:~/D1$ more f4.txt
+Hello this is OS Lab
+hi
+hello
+hello
+
+hussain@Istiak:~/D1$ ./shellQustion5.sh
+enter filename:
+2
+line number:
+^[[A^[[A^[[A
+sed: -e expression #1, char 1: unknown command: `
+hussain@Istiak:~/D1$ ./shellQustion5.sh
+enter filename:
+f4.txt
+line number:
+2
+hussain@Istiak:~/D1$ more f4.txt
+Hello this is OS Lab
+hello
+hello
+
+hussain@Istiak:~/D1$ nano shellQustion5.sh
+hussain@Istiak:~/D1$ touch shellQustion6.sh
+hussain@Istiak:~/D1$ chmod u+x shellQustion6.sh
+hussain@Istiak:~/D1$ nano shellQustion6.sh
+hussain@Istiak:~/D1$ cd ..
+hussain@Istiak:~$ nano e6.sh
+hussain@Istiak:~$ ./e6.sh
+enter a string:
+I love Bangladesh
+start
+I
+size
+5
+I lov
+size of string is: 17 and substring size is : 5
+hussain@Istiak:~$ nano e6.sh
+hussain@Istiak:~$ cd D!
+-bash: cd: D!: No such file or directory
+hussain@Istiak:~$ cd D1
+hussain@Istiak:~/D1$ ls
+D2       delete.txt  shell1.sh         shellQustion4.sh
+F4.TXT   f4.txt      shellQustion1.sh  shellQustion5.sh
+cFile    f5.txt      shellQustion2.sh  shellQustion6.sh
+cFile.c  shell.sh    shellQustion3.sh  substitue.txt
+hussain@Istiak:~/D1$ nano e6.sh
+hussain@Istiak:~/D1$ ./e6.sh
+-bash: ./e6.sh: Permission denied
+hussain@Istiak:~/D1$ chmod u+x shellQustion6.sh
+hussain@Istiak:~/D1$ ./shellQustion6.sh
+./shellQustion6.sh: line 1: delete: command not found
+hussain@Istiak:~/D1$ nano shellQustion6.sh
+hussain@Istiak:~/D1$ ./shellQustion6.sh
+enter a string:
+
+enter start of the substring you want:
+
+enter size:
+
+
+size of the string is: 0 and substring is: 0
+hussain@Istiak:~/D1$ ls
+D2       delete.txt  shell.sh          shellQustion3.sh  substitue.txt
+F4.TXT   e6.sh       shell1.sh         shellQustion4.sh
+cFile    f4.txt      shellQustion1.sh  shellQustion5.sh
+cFile.c  f5.txt      shellQustion2.sh  shellQustion6.sh
+hussain@Istiak:~/D1$ ./shellQustion6.sh
+enter a string:
+I love Bangladesh
+enter start of the substring you want:
+B
+enter size:
+5
+I lov
+size of the string is: 17 and substring is: 5
+hussain@Istiak:~/D1$ nano shellQustion6.sh
+hussain@Istiak:~/D1$ ./shellQustion6.sh
+Enter a string: I Love Bangladesh
+Enter start character: B
+Enter substring length: 6
+Substring: Bangla
+String length: 17, Substring length: 6
+hussain@Istiak:~/D1$
+hussain@Istiak:~/D1$
+hussain@Istiak:~/D1$ ls
+D2      cFile    delete.txt  f4.txt  shell.sh   shellQustion1.sh  shellQustion3.sh  shellQustion5.sh  substitue.txt
+F4.TXT  cFile.c  e6.sh       f5.txt  shell1.sh  shellQustion2.sh  shellQustion4.sh  shellQustion6.sh
+hussain@Istiak:~/D1$

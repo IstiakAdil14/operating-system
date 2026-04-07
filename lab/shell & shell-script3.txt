@@ -1,0 +1,6 @@
+shell & shell-script
+nano f1.sh and file open(./f1.sh)
+nano f2.c and run (gcc f2.c -o f2) run ./filename
+time ./f1.sh (checking how much time taking)
+check f3.txt file(more information there)
+tasks are solved in example.sh files(check it out)

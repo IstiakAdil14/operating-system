@@ -1,0 +1,14 @@
+touch file.txt(file create)
+nano file.txt (move to new editor)
+ctrl + x (exit)
+more file.txt(file open)
+
+
+sed -> substitute (sed -i 's/old/new/' file.txt
+ 		   sed -i 's/old/new/2' file.txt
+ 		   sed -i 's/old/new/g' file.txt
+ 		  )
+    -> delete     (
+ 		   sed -i '/word/d' file.txt
+                   sed -i '2d' file.txt
+ 		   sed -i '2,5d' file.txt)

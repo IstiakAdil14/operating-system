@@ -1,0 +1,32 @@
+Linux-commands:
+man
+pwd
+ls
+who
+whoami
+mkdir d1
+rmdir d1
+cd d2
+cd ..
+cd ~
+cat f1.txt
+ctrl + d
+cp f1.txt f2.txt
+mv f1.txt f4.txt
+mv f1.txt d1
+rm f1.txt
+echo
+touch f5.txt
+more
+less
+ctrl + X (for exit)
+
+permissions:
+read (represent 4)
+write (represent 2)
+execute (represent 1)
+-rwxr-xr-x -> user, group, others
+chmod g+w f1.txt (group permission)
+chmod u+x f1.txt (user permission)
+chmod o+x f1.txt (others permission)
+chown new f1.txt
